@@ -519,6 +519,11 @@ div.button-container-r a{
         font-size: 13px;
         font-weight: normal;
         }
+
+    label{
+        color:#000;
+        font-weight: 100;
+    }
     }
 
 
