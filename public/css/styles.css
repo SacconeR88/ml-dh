@@ -30,7 +30,7 @@ header{
 div.top-header{
     display: flex;
     flex-wrap: wrap;
-        align-items: center;
+    align-items: center;
     
 }
 
@@ -43,7 +43,8 @@ div.top-header p{
 
 header div.logo{
     width: 45%;
-    padding: 0px;
+    padding: 5px 5px;
+    margin: 10px 5px 0 0;
 }
 
 header nav{
@@ -257,10 +258,11 @@ footer .button-container h4{
     padding-top : 6px;
     margin: 0px;
 }
+
 footer .button-container p{
     box-sizing: content-box;
     font-size: 13px;
-    padding : 1px 30px;
+    padding : 6px 30px 1px;
     margin: 0px;
     color: #636563;
 }
@@ -463,9 +465,10 @@ div.button-container-r a{
 
 
 
+
 /*tablet-----------------------------------------------------------*/
 
-@media screen and (min-width:361px) {
+@media screen and (min-width:391px){
 
 
     main section .products{
@@ -482,15 +485,15 @@ div.button-container-r a{
     div.top-header{
         display: flex;
         justify-content: space-around;
-        padding: 10px;
+        padding: 10px 10px 0;
         flex-wrap: nowrap;  
-        
-        
     }
+
     div.top-header p{
         width: 35%;
         text-align: center;
         margin-top: 10px;
+        font-size: 13px;
     }
     
     header div.logo{
@@ -524,13 +527,31 @@ div.button-container-r a{
         color:#000;
         font-weight: 100;
     }
+
+    footer .button-container-main{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    
+
+    footer .button-container{
+        width: 100%;
+        max-width: 550px;
+       align-items: center;
     }
 
+    footer .button-container .bars-menu{
+        font-size: 21px;
+
+    }
+}
 
 
 /*desktop----------------------------------------------------------*/
  
-@media screen and (min-width:769px) {
+@media screen and (min-width:733px) {
 
     section.button-container-main{
         display:flex;
@@ -555,10 +576,13 @@ div.button-container-r a{
 
     .lista1 li{
         padding: 0 0 0 20px;
+        font-size: 13px;
     }
 
     .lista2 li{
         padding: 0 20px 0 0;
+        font-size: 13px;
+
     }
 
     .barra-inferior .lista1{
@@ -576,19 +600,22 @@ div.button-container-r a{
     }
 
     div.top-header p{
-        width: 25%;
+        width: 30%;
         text-align: center;
-        margin-top: 10px;
+        font-size: 14px;
+        justify-items: baseline;
     }
     
     header div.logo{
-        width: 15%;
+        min-width: 160px;
         padding: 0px;
+        margin: 0 20px 0 0;
     }
     
     .barra-busqueda{
-        width: 45%;
+        width: 55%;
         height: 28px;
+        margin: 0 20px 0 0;
     }
 
     .barra-busqueda .input{
@@ -606,7 +633,18 @@ div.button-container-r a{
         max-width: 50%;
     }
 
+    footer .button-container h4{
+        font-size: 15px;
+        }
+    
+    footer .button-container p{
+        font-size: 13px;
+        padding : 6px 15px 1px;
 
+    }
 
+    footer .button-container .bars-menu{
+        font-size: 22px;
+
+    }
 }
-
