@@ -4,6 +4,8 @@
 
 }
 
+
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -116,19 +118,19 @@ div.main-article{
     position: relative;
 }
 
-.price{
-    font-size: 16px;
-    flex: 50%;
+div.main-article .price{
+    font-size: 21px;
+    flex: 30%;
 }
 
-.discount{
+div.main-article .discount{
     flex:50%;
     color:#39b54a;
+    font-size: 16px;
 }
 
-.discount,
-.description{
-    font-size: 14px;
+div.main-article .description{
+    font-size: 16px;
     font-weight: normal;
     }
 
@@ -143,15 +145,16 @@ section.banner img{
 }
 
 main{
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
     justify-content: space-around;
+    margin: auto;
 }
 
 main section article{
     background-color: #fff;
     margin: 10px 0px;
     border-radius: 4px;
+    box-shadow: 0 0 1px rgb(100,100,100);
 }
 
 
@@ -462,7 +465,9 @@ div.button-container-r a{
 
 /*tablet-----------------------------------------------------------*/
 
-@media screen and (min-width:361px){
+@media screen and (min-width:361px) {
+
+
     main section .products{
         display: flex;
         justify-content: space-around;
@@ -471,13 +476,9 @@ div.button-container-r a{
     }
 
     main section article{
-        width: 42%;
+        width: 47%;
     }
     
-    }
-    main section article{
-        box-shadow: 0 0 5px rgb(100,100,100);
-    }
     div.top-header{
         display: flex;
         justify-content: space-around;
@@ -498,11 +499,27 @@ div.button-container-r a{
     }
     
     .barra-busqueda{
-        width: 30%;
+        width: 35%;
         padding-left: 5px;
         color: #c03939d6;
     }
 
+    div.main-article .price{
+        font-size: 15px;
+        flex: 55%;
+    }
+    
+    div.main-article .discount{
+        flex:35%;
+        color:#39b54a;
+        font-size: 13px;
+    }
+    
+    div.main-article .description{
+        font-size: 13px;
+        font-weight: normal;
+        }
+    }
 
 
 
@@ -516,8 +533,7 @@ div.button-container-r a{
     }
 
     main section article{
-        box-shadow: 0 0 1px rgb(100,100,100);
-        width: 22%;
+        width: 24%;
     }
     
     nav{
